@@ -1,4 +1,5 @@
 #include "Functions.h"
+#include "DataStructures.h"  // Add this if missing
 #include <iostream>
 
 using namespace std;

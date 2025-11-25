@@ -20,6 +20,8 @@ public:
     typename std::vector<T>::const_iterator begin() const;
     typename std::vector<T>::const_iterator end() const;
     const std::vector<T>& getVector() const;
+    CustomSet<T> intersection(const CustomSet<T>& other) const;
+    CustomSet<T> setUnion(const CustomSet<T>& other) const;
 };
 
 template<typename K, typename V>
@@ -31,6 +33,7 @@ public:
     bool contains(const K&) const;
     V* get(const K&);
     const V* get(const K&) const;
+    V get(const K&, const V& defaultValue) const;
     V& operator[](const K&);
     void erase(const K&);
     int size() const;
@@ -38,6 +41,8 @@ public:
     void clear();
     typename std::vector<std::pair<K, V>>::iterator begin();
     typename std::vector<std::pair<K, V>>::iterator end();
+    typename std::vector<std::pair<K, V>>::const_iterator begin() const;
+    typename std::vector<std::pair<K, V>>::const_iterator end() const;
 };
 
 class CourseManager {
@@ -57,10 +62,11 @@ private:
 public:
     int addCourse(const std::string&, const std::string&, int);
     const Course* getCourse(int) const;
+    Course* getCourse(int);
     int getCourseByCode(const std::string&) const;
     int count() const;
     void listAll() const;
     const std::vector<Course>& getAllCourses() const;
 };
 
-#endif#pragma once
+#endif

@@ -3,6 +3,7 @@
 #include "Proof.h"
 #include "Consistency.h"
 #include "Performance.h"
+#include "DataStructures.h" 
 #include <iostream>
 #include <ctime>
 

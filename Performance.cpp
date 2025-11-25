@@ -1,6 +1,7 @@
 #include "Performance.h"
 #include "Functions.h"
 #include "Consistency.h"
+#include "DataStructures.h"  // Add this if missing
 #include <iostream>
 #include <iomanip>
 #include <ctime>

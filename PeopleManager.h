@@ -1,4 +1,3 @@
-#pragma once
 #ifndef PEOPLEMANAGER_H
 #define PEOPLEMANAGER_H
 
@@ -29,6 +28,7 @@ public:
     struct Room {
         int id;
         std::string name;
+        std::string roomNumber;
         int capacity;
 
         Room();

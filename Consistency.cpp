@@ -1,4 +1,5 @@
 #include "Consistency.h"
+#include "DataStructures.h"  // Add this if missing
 #include <iostream>
 #include <sstream>
 #include <algorithm>
